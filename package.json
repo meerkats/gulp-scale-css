@@ -1,0 +1,19 @@
+{
+  "name": "gulp-scale-css",
+  "version": "1.0.0",
+  "description": "Gulp task to scale your entire website through CSS by scaling all unit values by a percentage.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meerkats/gulp-scale-css"
+  },
+  "author": "Meerkats",
+  "bugs": {
+    "url": "https://github.com/meerkats/gulp-scale-css/issues"
+  },
+  "homepage": "https://github.com/meerkats/gulp-scale-css",
+  "dependencies": {
+    "underscore": "^1.7.0",
+    "through2": "^0.6.3"
+  }
+}
