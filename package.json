@@ -1,6 +1,6 @@
 {
   "name": "gulp-scale-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gulp task to scale your entire website through CSS by scaling all unit values by a percentage.",
   "main": "index.js",
   "repository": {

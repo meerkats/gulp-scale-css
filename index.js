@@ -21,10 +21,15 @@ module.exports = function (options) {
       if ((options.ignoreMediaQueries && $1) || (options.ignoreFontSize && $2)) {
         return match;
       }
-      if ($2) {
-        return ['font-size:', String((parseInt($3, 10) * options.size)), $4].join('');
+      var original_size = parseInt($3, 10);
+      var new_size = parseInt((original_size * options.size), 10);
+      if (new_size === 0 && original_size !== 0) {
+        new_size = 1;
       }
-      return [String((parseInt($3, 10) * options.size)), $4].join('');
+      if ($2) {
+        return ['font-size:', String(new_size), $4].join('');
+      }
+      return [String(new_size), $4].join('');
     }));
     next(null, file);
   });
